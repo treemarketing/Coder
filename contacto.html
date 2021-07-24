@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="Estilo.css">
-    <!-- vinculacion con hoja de estilo -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-<!-- Fuente utilizada en la web - importada de google fonts -->
-<script src="https://kit.fontawesome.com/859f69edd1.js" crossorigin="anonymous"></script>
-    <!-- vinclacion para iconos en la web -->
-</head>
-<body>
-    <header>
-        <div class="navegacion">
-            <nav>
-                     <ul class="menu-izquierda">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="Productos.html">Productos</a></li>
-                        <li><a href="quienes-somos.html">Quienes Somos</a></li>
-                        <li class="activo"><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
         
-        <div class="logo">
-            <H1 class="titulo">Papas con onda, pollo con estilo</H1>
-            <img src="multimedia/logo.jpg" alt="Logo">
-        </div>
+        <!-- vinculacion con hoja de estilo -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Fuente utilizada en la web - importada de google fonts -->
+    <script src="https://kit.fontawesome.com/859f69edd1.js" crossorigin="anonymous"></script>
+        <!-- vinclacion para iconos en la web -->
     
-                <div class="menu-derecha">
-                     <ul>
-                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="tu-pedido.html">HACÉ TU PEDIDO</a></li>
-                    </ul>
+        <!-- vinculacion con bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <header>
+            <div class="navegacion">
+                <nav>
+                         <ul class="menu-izquierda">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="Productos.html">Productos</a></li>
+                            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                            <li class="activo"><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    
+            
+            <div class="logo">
+                <H1 class="titulo">Papas con onda, pollo con estilo</H1>
+                <img src="multimedia/logo.jpg" alt="Logo">
+            </div>
+        
+                    <div class="menu-derecha">
+                         <ul>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="tu-pedido.html">HACÉ TU PEDIDO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header> 
+        <h2 class="expandir">Contacto</h2>
+    
+        <section>
+            <h3>Encontranos en Crisóstomo Alvarez 637 - S.M.Tucumán</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2584383333865!2d-65.20947108381961!3d-26.83173119629662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d734994f2d7%3A0x4ca59a2cb8a4e95!2sHey%20Papas*21!5e0!3m2!1ses-419!2sar!4v1627012271733!5m2!1ses-419!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="m-auto">
+    
+            <form class="needs-validation" novalidate>
+                <H3>Completa el formulario y te respondemos a la brevedad</H3>
+                <div class="container">
+            
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="nombre" class="form-control" required />
+                  <label class="nombre" for="nombre">Nombre y Apellido</label>
+                  <div class="valid-feedback">OK!</div>
                 </div>
-            </nav>
-        </div>
-    </header> 
-    <h2 class="expandir">Contacto</h2>
-
-    <form action="">
-
-    <H3>Completa el formulario y te respondemos a la brevedad</H3>
-        <fieldset><legend>Informacion Personal</legend>
-    <label for="Nombre">Nombre</label>
-    <input type="text" name="nombre" value="Nombre"><br>
-    <label for="Apellido">Apellido</label>
-    <input type="text" name="apellido" value="Apellido"><br>
-    <label for="talle">Talle</label>
-    <label for="Email">E-mail</label>
-    <input type="email" name="Email"><br>
-    <div><select name="ecivil" id="ecivil">
-    <option value="Soltero/a">Soltero/a</option>
-    <option value="Casado/a">Casado/a</option>
-    <option value="Conviviendo">Conviviendo</option>
-    <option value="Divorciado">Divorciado</option></div>
-    <input type="checkbox" name="acepta" value="1">¿Deseas recibir promociones?</select><br>
-    <textarea name="comentarios" id="comentarios" cols="30" rows="10">Comentarios</textarea><br>
-    <input type="submit" value="Enviar formulario">
-    <input type="reset" value="Limpiar formulario">
-    </fieldset>
-    </form>
-</body>
-
-<footer>
-    Copyright © 2021. All rights reserved by, <a title="" href="#">Alvaro Eduardo Salomón</a>
-</footer>
+              
+                <!-- Email -->
+                <form class="form-floating">
+                    <input type="email" class="form-control" required id="floatingInputInvalid" placeholder="Ingrese su email @">
+                    <label for="floatingInputInvalid">Ingresa Email</label>
+                    <div class="valid-feedback">OK!</div>
+                  </form>
+                
+                <!-- Mensaje -->
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                  <label class="form-label" for="form4Example3">Escribe tu mensaje</label>
+                </div>
+                 
+              
+                <!-- enviar -->
+                <button type="submit" class="btn btn-warning btn-lg mb-2">Enviar</button>
+                </div>
+              </form>
+            </div>
+            </section>
+      <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+      </script>
+    </body>
+    
+      <footer>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-2 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/heypapastuc" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>   
+          
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/heypapastuc/" role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/treemarketing/Coder" role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2021 Copyright:
+              <a class="text-white" href="https://aesalomon.com">Aesalomon</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </footer>
 </html>
