@@ -47,6 +47,13 @@ p {
 
 }
 
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    margin: 1px; 
+}
+
 
 img{
     margin: 5px;
@@ -175,14 +182,6 @@ a {
 
 .activo{
     background-color: #1a1a1a;
-}
-footer {
-    text-align: center;
-    color: #ffffff;
-    padding: 20px;
-    margin: 1px;
-    background: rgb(248,47,58);
-    background: radial-gradient(circle, rgba(248,47,58,1) 0%, rgba(31,16,11,1) 50%);
 }
 
 .grid-quienes{
