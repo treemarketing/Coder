@@ -269,7 +269,18 @@ a {
     .galeria article img{
         width: 100%
     }
-    
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        align-content: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "combos"
+            "pollo"
+            "papas" 
+            "empanadas";
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width:401px) {
