@@ -45,7 +45,6 @@ body{
 .grid__quienes--fotos {
         text-align: center;
         background-color:$color-texto2;
-    
             img{
             height: 100%;
             width: 100%;
@@ -71,18 +70,18 @@ body{
 
 .grid-container{
     display: grid;
-    gap: 10px;
-    padding: 10px;
+    gap: 1rem;
+    padding: 1rem;
     align-content: center;
     justify-content: space-around;
-    grid-template-areas: 'combos pollo'
-    'combos pollo'
-    'papas empanadas';
+    grid-template-areas: "combos pollo" "combos pollo" "papas empanadas";
+
+    article img{
+        width: 100%;
+        height: auto;
+    }
 }
-.grid-container article img{
-    width: 100%;
-    height: auto;
-}
+
 .combos{
     grid-area: combos;
     text-align: center;

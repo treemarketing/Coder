@@ -111,13 +111,13 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  gap: 10px;
-  padding: 10px;
+  gap: 1rem;
+  padding: 1rem;
   -ms-flex-line-pack: center;
       align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-      grid-template-areas: 'combos pollo' 'combos pollo' 'papas empanadas';
+      grid-template-areas: "combos pollo" "combos pollo" "papas empanadas";
 }
 
 .grid-container article img {
