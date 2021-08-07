@@ -70,6 +70,110 @@ body {
   width: 55vh;
 }
 
+.grid__quienes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr, 1fr;
+      grid-template-columns: 1fr, 1fr;
+  -ms-grid-rows: 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr;
+  gap: 10px 5px;
+  padding: 20px;
+      grid-template-areas: "fotos textos" "fotos fotos2";
+}
+
+.fotos {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: fotos;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.fotos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fotos2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: fotos2;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.fotos2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.textos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: textos;
+  padding: 0 15px 0 15px;
+  text-align: left;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+      grid-template-areas: "combos pollo" "combos pollo" "papas empanadas";
+}
+
+.grid-container article img {
+  width: 100%;
+  height: auto;
+}
+
+.combos {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: combos;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.pollo {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: pollo;
+  background-color: #1a1a1a;
+}
+
+.papas {
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: papas;
+  background-color: #1a1a1a;
+}
+
+.empanadas {
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: empanadas;
+  background-color: #1a1a1a;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -134,9 +238,52 @@ nav {
   transition: 2s;
 }
 
-.header__nav__menu li li:hover {
+.header__nav__menu li:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+
+.header__nav__menu--derecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__nav__menu--derecha ul {
+  padding-left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.header__nav__menu--derecha ul :hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header__nav__menu--derecha ul li {
+  margin: 5px;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.header__nav__menu--derecha ul li a {
+  color: #ffffff;
+}
+
+.header__nav__menu--derecha ul li a :hover {
+  color: #fee600;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.activo {
+  background-color: #1a1a1a;
 }
 
 footer {
@@ -144,5 +291,46 @@ footer {
   color: #ffffff;
   padding: 20px;
   margin: 1px;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+  .galeria article img {
+    width: 100%;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+        grid-template-areas: "combos" "pollo" "papas"  "empanadas";
+  }
+  .grid__quienes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 0.3fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+        grid-template-areas: "fotos" "textos" "fotos2";
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 401px) {
+  .laptop {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

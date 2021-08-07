@@ -39,11 +39,41 @@ nav{
                 }
                 a:hover{
                     color: #fee600;
-                    transition: 2s;
+                    transition: 2s; 
                 }
+            }
             li:hover{
                 transform: scale(1.2,1.2);
-            }
-            }
+                }
         }
+        &__menu--derecha{
+            display: flex;
+            align-items: flex-end;
+                ul{
+                    padding-left: 0px;
+                    display: flex;
+                    list-style-type: none;
+                    font-size: 30px;
+                :hover{
+                    transform: rotate(360deg);
+                }
+                li{
+                 margin: 5px;
+                transition: 3s;
+                    a{
+                        color: #ffffff;
+                        :hover{
+                            color: #fee600;
+                            transition: 2s;
+                        }
+                    }
+                    
+                        }
+                            
+                    }
+                }
+ }
+
+ .activo{
+    background-color: #1a1a1a;
 }

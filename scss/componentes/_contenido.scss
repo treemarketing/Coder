@@ -34,3 +34,87 @@ body{
 }
 
 
+
+.grid__quienes{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    gap: 10px 5px;
+    padding: 20px;
+    grid-template-areas:
+    "fotos textos"
+    "fotos fotos2";
+}
+
+.fotos {
+        grid-area: fotos;
+        align-self: baseline;
+        text-align: center;
+        background-color:#1a1a1a;
+    
+            img{
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            }
+    }
+
+.fotos2{
+    grid-area: fotos2;
+    text-align: center;
+    background-color:#1a1a1a;
+
+        img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.textos{
+    grid-area: textos;
+    padding: 0 15px 0 15px;
+    text-align: left;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-areas:
+        "combos pollo"
+        "combos pollo"
+        "papas empanadas";
+}
+
+.grid-container article img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.combos{
+    grid-area: combos;
+    text-align: center;
+    background-color:#1a1a1a;
+}
+.pollo{
+    text-align: center;
+    grid-area: pollo;
+    background-color: #1a1a1a;
+}
+.papas{
+    text-align: center;
+    grid-area: papas;
+    background-color:#1a1a1a;
+}
+.empanadas{
+    text-align: center;
+    grid-area: empanadas;
+    background-color:#1a1a1a;
+}
+
+

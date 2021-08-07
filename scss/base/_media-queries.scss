@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 10px;    
+    }
+    .galeria article img{
+        width: 100%
+    }
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        align-content: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "combos"
+            "pollo"
+            "papas" 
+            "empanadas";
+    }
+    .grid__quienes{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 0.3fr 1fr; 
+        gap: 10px;
+        padding: 10px;
+        align-content: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "fotos"
+            "textos"
+            "fotos2"; 
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width:401px) {
+    .laptop {
+        display: block;
+    }
+    
+}
