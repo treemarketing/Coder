@@ -1,0 +1,36 @@
+@import '../base/variables';
+@import '../base/titulos';
+
+*{  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: $color-bg;
+}
+
+/* hacer el carrusel responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    article{
+        margin: 10px;
+            img{
+                 width: 45vh;
+                transition: 3s; 
+            }
+            img:hover{
+                height: auto; width: 55vh;
+            }
+    }
+}
+
+
