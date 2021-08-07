@@ -47,9 +47,10 @@
                 </nav>
             </div>
         </header> 
-        <h2 class="expandir">Contacto</h2>
+        
     
         <section>
+          <h2 class="expandir">Contacto</h2>
             <h3>Encontranos en Crisóstomo Alvarez 637 - S.M.Tucumán</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2584383333865!2d-65.20947108381961!3d-26.83173119629662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d734994f2d7%3A0x4ca59a2cb8a4e95!2sHey%20Papas*21!5e0!3m2!1ses-419!2sar!4v1627012271733!5m2!1ses-419!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
@@ -62,21 +63,20 @@
                 <!-- Name input -->
                 <div class="form-outline mb-4">
                   <input type="text" id="nombre" class="form-control" required />
-                  <label class="nombre" for="nombre"><h4>Nombre y Apellido</h4></label>
+                  <label class="contacto--nombre" for="nombre">Nombre y Apellido</label>
                   <div class="valid-feedback">OK!</div>
                 </div>
               
                 <!-- Email -->
-                <form class="form-floating">
                     <input type="email" class="form-control" required id="floatingInputInvalid" placeholder="Ingrese su email @">
-                    <label for="floatingInputInvalid"><h4>Ingresa Email</h4></label>
+                    <label class="contacto--email" for="floatingInputInvalid">Ingresa Email</label>
                     <div class="valid-feedback">OK!</div>
-                  </form>
+               
                 
                 <!-- Mensaje -->
                 <div class="form-outline mb-4">
                   <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="form-label" for="form4Example3"><h4>Escribe tu mensaje</h4></label>
+                  <label class="contacto--mensaje" for="form4Example3">Escribe tu mensaje</label>
                 </div>
                  
               
@@ -84,7 +84,6 @@
                 <button type="submit" class="btn btn-warning btn-lg mb-2">Enviar</button>
                 </div>
               </form>
-            </div>
             </section>
       <script>
           // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -108,13 +107,13 @@
         })
     })()
       </script>
-    </body>
-  <footer>
-    <footer class="bg-dark text-center text-white">
+
+<footer class="bg-dark text-center text-white">
       <!-- Grid container -->
       <div class="container p-2 pb-0">
         <!-- Section: Social media -->
         <section class="mb-4">
+          <h6>Redes Sociales</h6>
           <!-- Facebook -->
           <a class="btn btn-outline-light btn-floating btn-lg m-1" href="https://www.facebook.com/heypapastuc" role="button"
             ><i class="fab fa-facebook-f"></i
@@ -140,6 +139,6 @@
         <a class="text-white" href="https://aesalomon.com"><h4>Aesalomon</h4></a>
       </div>
       <!-- Copyright -->
-    </footer>
-  </footer>
+</footer>
+</body>
 </html>
