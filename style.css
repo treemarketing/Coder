@@ -73,52 +73,37 @@ body {
 .grid__quienes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr;
-      grid-template-columns: 1fr, 1fr;
-  -ms-grid-rows: 1fr, 1fr;
-      grid-template-rows: 1fr, 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   gap: 10px 5px;
   padding: 20px;
-      grid-template-areas: "fotos textos" "fotos fotos2";
 }
 
-.fotos {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+.grid__quienes--fotos {
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.grid__quienes--fotos img {
+  height: 100%;
+  width: 100%;
+}
+
+.grid__quienes--fotos2 {
   -ms-grid-column: 1;
-  grid-area: fotos;
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
   text-align: center;
   background-color: #1a1a1a;
 }
 
-.fotos img {
+.grid__quienes--fotos2 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  overflow: hidden;
 }
 
-.fotos2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: fotos2;
-  text-align: center;
-  background-color: #1a1a1a;
-}
-
-.fotos2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.textos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: textos;
+.grid__quienes--textos {
   padding: 0 15px 0 15px;
   text-align: left;
 }
@@ -132,7 +117,7 @@ body {
       align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-      grid-template-areas: "combos pollo" "combos pollo" "papas empanadas";
+      grid-template-areas: 'combos pollo' 'combos pollo' 'papas empanadas';
 }
 
 .grid-container article img {
@@ -150,27 +135,27 @@ body {
 }
 
 .pollo {
-  text-align: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: pollo;
+  text-align: center;
   background-color: #1a1a1a;
 }
 
 .papas {
-  text-align: center;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: papas;
+  text-align: center;
   background-color: #1a1a1a;
 }
 
 .empanadas {
-  text-align: center;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: empanadas;
+  text-align: center;
   background-color: #1a1a1a;
 }
 
@@ -309,22 +294,20 @@ footer {
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-        grid-template-areas: "combos" "pollo" "papas"  "empanadas";
+        grid-template-areas: 'combos' 'pollo' 'papas' 'empanadas';
   }
   .grid__quienes {
     display: -ms-grid;
     display: grid;
+    grid-auto-rows: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 0.3fr 1fr;
-        grid-template-rows: 1fr 0.3fr 1fr;
     gap: 10px;
     padding: 10px;
     -ms-flex-line-pack: center;
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-        grid-template-areas: "fotos" "textos" "fotos2";
   }
 }
 
