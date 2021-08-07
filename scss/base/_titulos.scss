@@ -31,3 +31,7 @@ h4{
 p{
     @include font($color-texto,1.5rem ,center );
 }
+
+.contacto--nombre .contacto--email .contacto--mensaje {
+    font-size: 2em;
+}
