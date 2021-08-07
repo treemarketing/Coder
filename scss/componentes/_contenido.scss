@@ -50,7 +50,7 @@ body{
         grid-area: fotos;
         align-self: baseline;
         text-align: center;
-        background-color:#1a1a1a;
+        background-color:$color-texto2;
     
             img{
             width: 100%;
@@ -63,7 +63,7 @@ body{
 .fotos2{
     grid-area: fotos2;
     text-align: center;
-    background-color:#1a1a1a;
+    background-color:$color-texto2;
 
         img{
         object-fit: cover;
@@ -99,22 +99,22 @@ body{
 .combos{
     grid-area: combos;
     text-align: center;
-    background-color:#1a1a1a;
+    background-color:$color-texto2;
 }
 .pollo{
     text-align: center;
     grid-area: pollo;
-    background-color: #1a1a1a;
+    background-color: $color-texto2;
 }
 .papas{
     text-align: center;
     grid-area: papas;
-    background-color:#1a1a1a;
+    background-color:$color-texto2;
 }
 .empanadas{
     text-align: center;
     grid-area: empanadas;
-    background-color:#1a1a1a;
+    background-color:$color-texto2;
 }
 
 
