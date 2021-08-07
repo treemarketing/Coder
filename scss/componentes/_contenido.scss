@@ -12,8 +12,8 @@ body{
 
 
 ol li{
-    background-color: #1a1a1a;
-    color: #fee600;
+    background-color: $color-texto2;
+    color: $color-llamada;
 }
 
 a {
@@ -63,7 +63,7 @@ a {
 
 .grid__quienes{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1.5fr 2fr;
     gap: 10px 5px;
     padding: 20px;
 }
@@ -93,6 +93,9 @@ a {
     text-align-last: center;
     padding: 0 15px 0 15px;
     text-align: left;
+    img{
+        width: 100%;
+    }
 }
 
 .grid-container{
@@ -130,3 +133,17 @@ a {
     text-align: center;
     background-color:$color-texto2;
 }
+
+.pedidos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+
+    img{
+        width: 100%;
+    }
+    }

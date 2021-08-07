@@ -110,8 +110,8 @@ a {
 .grid__quienes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
   gap: 10px 5px;
   padding: 20px;
 }
@@ -144,6 +144,10 @@ a {
   text-align-last: center;
   padding: 0 15px 0 15px;
   text-align: left;
+}
+
+.grid__quienes--textos img {
+  width: 100%;
 }
 
 .grid-container {
@@ -195,6 +199,25 @@ a {
   grid-area: empanadas;
   text-align: center;
   background-color: #1a1a1a;
+}
+
+.pedidos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.pedidos img {
+  width: 100%;
 }
 
 header {
@@ -324,7 +347,7 @@ footer {
   margin: 1px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   html {
     font-size: 10px;
   }
