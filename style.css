@@ -141,6 +141,7 @@ a {
 }
 
 .grid__quienes--textos {
+  text-align-last: center;
   padding: 0 15px 0 15px;
   text-align: left;
 }
@@ -353,12 +354,6 @@ footer {
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-}
-
-@media screen and (max-width: 1000px) and (min-width: 401px) {
-  .laptop {
-    display: block;
   }
 }
 
