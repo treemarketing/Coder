@@ -100,38 +100,33 @@ a {
 
 .grid-container{
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
     align-content: center;
     justify-content: space-around;
-    grid-template-areas: "combos pollo" "combos pollo" "papas empanadas";
-
+    grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+    grid-template-rows: auto;
     article img{
         width: 100%;
         height: auto;
     }
 }
 
-.combos{
-    grid-area: combos;
-    text-align: center;
-    background-color:$color-texto2;
-}
 .pollo{
-    grid-area: pollo;
     text-align: center;
-    background-color: $color-texto2;
 }
-.papas{
-    grid-area: papas;
+.combos{
+    grid-column: 1 / 3;
     text-align: center;
-    background-color:$color-texto2;
+}
+
+.papas{
+    grid-column: 1/ 3;
+    text-align: center;
 }
 
 .empanadas{
-    grid-area: empanadas;
     text-align: center;
-    background-color:$color-texto2;
 }
 
 .pedidos {
