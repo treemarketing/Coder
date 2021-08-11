@@ -360,7 +360,6 @@ footer {
   .grid__quienes {
     display: -ms-grid;
     display: grid;
-    grid-auto-rows: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 10px;
