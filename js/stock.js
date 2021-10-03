@@ -1,7 +1,7 @@
 let stockProductos = [
-    {id: 1, nombre: "Combo Miss Papas", tipo: "Papas Fritas", desc: "Cono de papas fritas + 1 topping + 1 porcion de pollo", precio: 390,  img: '/multimedia/cono.jpg', cantidad:1},
-    {id: 2, nombre: "6 Empanadas", tipo: "Empanadas", desc: "6 Empanadas de carne", precio: 400,  img: '/multimedia/empanadas6.jpg', cantidad:1},
-    {id: 3, nombre: "Miss Papas", tipo: "Papas Fritas", desc: "Cono mediano de papas fritas", precio: 170,  img: '/multimedia/papas.jpg', cantidad:1},
+    {id: 1, nombre: "Combo Miss Papas", tipo: "Papas Fritas", desc: "Cono de papas fritas + 1 topping + 1 porcion de pollo", precio: 390,  img: 'multimedia/cono.jpg', cantidad:1},
+    {id: 2, nombre: "6 Empanadas", tipo: "Empanadas", desc: "6 Empanadas de carne", precio: 400,  img: 'multimedia/empanadas6.jpg', cantidad:1},
+    {id: 3, nombre: "Miss Papas", tipo: "Papas Fritas", desc: "Cono mediano de papas fritas", precio: 170,  img: 'multimedia/papas.jpg', cantidad:1},
     // {id: 4, nombre: "Buzo 4", tipo: "buzo", desc: "Un buzo que re va con vos", precio: 1400,  img: '/img/papas.jpg', cantidad:1},
     // {id: 5, nombre: "Buzo 5", tipo: "buzo", desc: "Un buzo que re va con vos", precio: 1200,  img: '/img/papas.jpg', cantidad:1},
     // {id: 6, nombre: "Buzo 6", tipo: "buzo", desc: "Un buzo que re va con vos", precio: 1500,  img: '/img/papas.jpg', cantidad:1},
