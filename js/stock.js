@@ -12,3 +12,5 @@ let stockProductos = [
     // {id: 11, nombre: "Remera 5", tipo: "remera", desc: "Una remera que re va con vos", precio: 700,  img: '/img/empanadas6.jpg', cantidad:1},
     // {id: 12, nombre: "Remera 6", tipo: "remera", desc: "Una remera que re va con vos", precio: 700, , img: '/img/empanadas6.jpg', cantidad:1},
 ]
+
+localStorage.setItem('productos' , JSON.stringify(stockProductos));

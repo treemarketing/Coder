@@ -87,7 +87,9 @@ const contenedorCarrito = document.getElementById('carrito-contenedor');
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
 
-mostrarProductos (stockProductos)
+let stockLS = JSON.parse(localStorage.getItem('productos'));
+
+mostrarProductos (stockLS)
 
 function mostrarProductos (array){
     contenedorProductos.innerHTML = '';
