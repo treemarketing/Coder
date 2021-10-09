@@ -61,59 +61,8 @@
             <h3>Encontranos en Crisóstomo Alvarez 637 - S.M.Tucumán</h3>
             <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2584383333865!2d-65.20947108381961!3d-26.83173119629662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d734994f2d7%3A0x4ca59a2cb8a4e95!2sHey%20Papas*21!5e0!3m2!1ses-419!2sar!4v1627012271733!5m2!1ses-419!2sar"  height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-        <section class="m-auto">
-    
-            <form class="needs-validation" novalidate>
-                <H3>Completa el formulario y te respondemos a la brevedad</H3>
-                <div class="container">
-            
-                <!-- Name input -->
-                <div class="form-outline mb-4">
-                  <input type="text" id="nombre" class="form-control" required />
-                  <label class="contacto--nombre" for="nombre">Nombre y Apellido</label>
-                  <div class="valid-feedback">OK!</div>
-                </div>
-              
-                <!-- Email -->
-                    <input type="email" class="form-control" required id="floatingInputInvalid" placeholder="Ingrese su email @">
-                    <label class="contacto--email" for="floatingInputInvalid">Ingresa Email</label>
-                    <div class="valid-feedback">OK!</div>
-               
-                
-                <!-- Mensaje -->
-                <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="contacto--mensaje" for="form4Example3">Escribe tu mensaje</label>
-                </div>
-                 
-              
-                <!-- enviar -->
-                <button type="submit" class="btn btn-warning btn-lg mb-2">Enviar</button>
-                </div>
-              </form>
-            </section>
-      <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict'
-    
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.querySelectorAll('.needs-validation')
-    
-      // Loop over them and prevent submission
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-    
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
-      </script>
+<!-- inserto formulario con jquery -->
+        <div id="formulario"></div>
 
 <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
@@ -147,5 +96,8 @@
       </div>
       <!-- Copyright -->
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script> 
 </body>
 </html>
