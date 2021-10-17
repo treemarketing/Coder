@@ -54,39 +54,39 @@ form.classList.add('was-validated')
 
 //probando metodos get y post
 
-
 //Declaramos la url que vamos a usar para el GET
-const URLGET   = "https://jsonplaceholder.typicode.com/posts"
+const URLPOST   = "https://jsonplaceholder.typicode.com/posts"
 //Declaramos la información a enviar
-const infoPost =  { nombre: "Ana", profesion: "Programadora" }
+const infoPost =  { producto: "papas fritas", precio: "$290" }
 //Agregamos un botón con jQuery
-$("contacto/body/").prepend('<button id="btn2">POST</button>');
+$("body").prepend('<button id="btn2">POST</button>');
 //Escuchamos el evento click del botón agregado
-
 $("#btn2").click(() => { 
-    $.post(URLGET, infoPost ,(respuesto, estado) => {
+    $.post(URLPOST, infoPost ,(respuesta1, estado) => {
         if(estado === "success"){
             $("body").prepend(`<div>
-Guardado:${respuesto.nombre}
+Guardado:${respuesta1.producto}
+${respuesta1.precio}
 </div>`);
         }  
     });
 });
 
-
-// //Agregamos un botón con jQuery
-// $("contacto/body/").prepend('<button id="btn1">GET</button>');
-// //Escuchamos el evento click del botón agregado
-// $("#btn1").click(() => { 
-//     $.get(URLGET, function (respuesta, estado) {
-//           if(estado === "success"){
-//             let misDatos = respuesta;
-//             for (const dato of misDatos) {
-//               $("body").prepend(`<div>
-//                                    <h3>${dato.title}</h3>
-//                                    <p> ${dato.body}</p>
-//                                   </div>`);
-//             }  
-//           }
-//     });
-// });
+//Declaramos la url que vamos a usar para el GET
+const URLGET = "https://jsonplaceholder.typicode.com/posts"
+//Agregamos un botón con jQuery
+$("body").prepend('<button id="btn1">GET</button>');
+//Escuchamos el evento click del botón agregado
+$("#btn1").click(() => { 
+    $.get(URLGET, function (respuesta, estado) {
+          if(estado === "success"){
+            let misDatos = respuesta;
+            for (const dato of misDatos) {
+              $("body").prepend(`<div>
+                                   <h3>${dato.title}</h3>
+                                   <p> ${dato.body}</p>
+                                  </div>`);
+            }  
+          }
+    });
+});
