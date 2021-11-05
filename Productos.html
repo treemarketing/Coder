@@ -55,7 +55,25 @@
     </header>
     
     <section>
-      <h2 class="expandir">Productos</h2>  
+      
+      <div class="menu-container">
+        <h2 class="expandir">Productos</h2>
+        <div class="search">
+          <!-- filtro -->
+          <div class="dropdown">
+            <button class="btn btn-warning btn-lg col-4 mx-auto dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Ordenar por
+            </button>
+            <ul class="dropdown-menu col-4 mx-auto" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" value="az" type="button">Orden alfabético</button></li>
+              <li><button class="dropdown-item" value="01" type="button">Precio ascendente</button></li>
+              <li><button class="dropdown-item" value="10" type="button">Precio descendente</button></li>
+            </ul>
+          </div>
+          <div id="menu-items">
+           
+          </div>
         <div class="grid-container aparicion">
             <article class="combos"><div> <h3>Arma tu Combo</h3> <img src="multimedia/cono.jpg" alt="cono"></div> <div><img src="multimedia/balde.jpg" alt="balde"></div></article>
             <article class="pollo"><h3>Pollo Frito</h3><img src="multimedia/pollo-crispy.jpg" alt="crispy"><img src="multimedia/pollo-finger.jpg" alt="finger"><img src="multimedia/pollo-nuggets.jpg" alt="finger"><img src="multimedia/pollo-buffalo.jpg" alt="buffalo"></article>

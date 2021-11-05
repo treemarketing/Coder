@@ -120,7 +120,34 @@ function mostrarProductos (array){
 
 }
 
+// function mostrarProductos (array){
+//   contenedorProductos.innerHTML = '';
+//   for (const producto of array){
+//       let div = document.createElement ("div");
+//       div.classList.add('producto');
+//       div.innerHTML += `<div class="card" style="width: 18rem;">
+//       <img src="${producto.img}" class="card-img-top" alt="...">
+//       <div class="card-body">
+//         <h5 class="card-title">${producto.nombre}</h5>
+//         <h6 class="card-text">${producto.desc}</p>
+//       </div>
+//       <ul class="list-group list-group-flush">
+//         <li class="list-group-item">$${producto.precio}</li>
+//       </ul>
+//       <div class="card-body">
+//           <a id="boton${producto.id}"href="#" class="btn btn-primary">Agregar Carrito</a>
+        
+//       </div>
+//     </div> `
+//     contenedorProductos.appendChild(div);
+//     let boton = document.getElementById(`boton${producto.id}`)
 
+//     boton.addEventListener('click', ()=>{
+//       agregarAlCarrito(producto.id)
+//   })
+//   }
+
+// }
 function agregarAlCarrito(id){
     let repetido = carritoDeCompras.find(prodR => prodR.id ==id)
     if (repetido){
