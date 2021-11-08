@@ -146,3 +146,32 @@ a {
         width: 100%;
     }
     }
+
+    .card-body {
+        background-color: $color-llamada;
+        text-align: center;
+    }
+
+    .car-text{
+        p{color:white;}
+    }
+
+
+    .btn-primary{
+        background-color: $color-texto2;
+        border-radius: 30px;
+        
+        
+    }
+    .btn-primary:hover{
+        background-color: $color-bg;
+        
+    }
+
+    .list-group-item{
+        background-color: $color-bg;
+        text-align:center;
+        font-size:2rem;
+        color: white;
+    }
+    

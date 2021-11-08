@@ -215,6 +215,31 @@ a {
   width: 100%;
 }
 
+.card-body {
+  background-color: #fee600;
+  text-align: center;
+}
+
+.car-text p {
+  color: white;
+}
+
+.btn-primary {
+  background-color: #1a1a1a;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #ff2b37;
+}
+
+.list-group-item {
+  background-color: #ff2b37;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;

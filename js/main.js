@@ -96,7 +96,7 @@ function mostrarProductos (array){
     for (const producto of array){
         let div = document.createElement ("div");
         div.classList.add('producto');
-        div.innerHTML += `<div class="card" style="width: 18rem;">
+        div.innerHTML += `<div class="card shadow mb-1 bg-warning rounded" style="width: 20rem;">
         <img src="${producto.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${producto.nombre}</h5>
@@ -114,7 +114,8 @@ function mostrarProductos (array){
       let boton = document.getElementById(`boton${producto.id}`)
 
       boton.addEventListener('click', ()=>{
-        agregarAlCarrito(producto.id)
+        agregarAlCarrito(producto.id);
+        alert("Se ha agregado un " + producto.nombre + " a tu orden.");
     })
     }
 
@@ -149,10 +150,12 @@ function mostrarProductos (array){
 
 // }
 function agregarAlCarrito(id){
+    
     let repetido = carritoDeCompras.find(prodR => prodR.id ==id)
     if (repetido){
-      repetido.cantidad = repetido.cantidad + 1
-      document.getElementById(`cantidad${repetido.id}`).innerHTML = `<li id="cantidad${repetido.id}" class="list-group-item">Cantidad: ${repetido.cantidad}</li>`
+      repetido.cantidad = repetido.cantidad +1
+      // document.getElementById(`cantidad${repetido.id}`).innerHTML = `<li id="cantidad${repetido.id}" class="list-group-item">Cantidad: ${repetido.cantidad}</li>`
+      document.getElementById(`cantidad${repetido.id}`).innerHTML = ` <td id="cantidad${repetido.id}">${repetido.cantidad}</td>`
       actualizarCarrito()
     }
 
@@ -163,15 +166,33 @@ function agregarAlCarrito(id){
     actualizarCarrito()
     let div = document.createElement("div")
     div.classList.add('productoEnCarrito')
-    div.innerHTML = `  <div class="card-body">
-    <button type="button" id="eliminar${productoAgregar.id}" class="btn btn-danger">Eliminar</button>
-    <h5 class="card-title">${productoAgregar.nombre}</h5>
-    <p class="card-text">${productoAgregar.desc}</p>
-  <ul class="list-group list-group-flush">
-  <li class="list-group-item">$${productoAgregar.precio}</li>
-    <li id="cantidad${productoAgregar.id}" class="list-group-item">Cantidad: ${productoAgregar.cantidad}</li>
-    
-  </ul></div>`
+//  div.innerHTML = `  <div class="card-body">
+//   <button type="button" id="eliminar${productoAgregar.id}" class="btn btn-danger">Eliminar</button>
+//   <h4 class="card-title">${productoAgregar.nombre}</h5>
+//   <ul class="list-group list-group-flush">
+//   <li class="list-group-item">$${productoAgregar.precio}</li>
+//   <li id="cantidad${productoAgregar.id}" class="list-group-item">Cantidad: ${productoAgregar.cantidad}</li>
+//   </ul></div>`
+
+  div.innerHTML = `<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Productos</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>${productoAgregar.nombre}</td>
+      <td>$${productoAgregar.precio}</td>
+      <td id="cantidad${productoAgregar.id}">${productoAgregar.cantidad}</td><button type="button" id="eliminar${productoAgregar.id}" class="btn btn-danger">Eliminar</button>
+    </tr>
+    </tbody>
+</table>`
+
+
+  
   contenedorCarrito.appendChild(div)
 
   //eliminar productos del carrito
